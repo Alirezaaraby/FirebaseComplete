@@ -1,4 +1,6 @@
+# Import Libraries
 import serial
+import time
 
 # Set up the Serial connection to capture the Microbit communications
 ser = serial.Serial()
@@ -21,6 +23,10 @@ while True:
 
     # Print the returned unique ID from Firebase on receipt of our data
     print("The temperature is ",temperature)
+    
+    # Pause for 5 seconds between loops
+    time.sleep(5)
 
 # Close the serial connection
 ser.close()
+
