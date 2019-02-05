@@ -5,7 +5,7 @@ import time
 import serial
 
 # Create the Connection to our Firebase Database
-FBConn = firebase.FirebaseApplication('https://microbittempreader.firebaseio.com/', None)
+FBConn = firebase.FirebaseApplication('https://microbittempreader-a26ef.firebaseio.com/', None)
 
 # Set up the Serial connection to capture the Microbit communications
 ser = serial.Serial()
